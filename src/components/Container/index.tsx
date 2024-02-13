@@ -3,6 +3,7 @@ import logo from '../../assets/logo-mod-notes.svg'
 import NewNoteCard from '../Cards/NewNoteCard'
 import NoteCard from '../Cards/NoteCard'
 import { ContainerCards, ContainerElement, ContainerImg, Form, HorizontalDivider, Img, Input } from './Container.style'
+import { toast } from 'sonner'
 
 interface Note {
     id: string,
@@ -43,6 +44,7 @@ function Container () {
 
         setNotes(notesArray)
         localStorage.setItem('notes', JSON.stringify(notesArray))
+        toast.info('Sua nota foi deletada.')
     }
 
     function handleSearch (event: ChangeEvent<HTMLInputElement>) {
