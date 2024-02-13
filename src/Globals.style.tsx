@@ -13,6 +13,11 @@ const Globals = createGlobalStyle`
         background: #0f172a;
         color: #f8fafc;
         overflow-y: scroll;
+        overflow-x: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
