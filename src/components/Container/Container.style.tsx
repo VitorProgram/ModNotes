@@ -28,7 +28,7 @@ export const Form = styled.form`
 
 export const Input = styled(InputElement)`
     margin-top: 1rem;
-    font-size: 25px;
+    font-size: 20px;
 
     @media (min-width: 425px) {
         font-size: 30px;
